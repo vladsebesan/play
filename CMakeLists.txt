@@ -16,7 +16,7 @@ endif()
 
 include(${CMAKE_BINARY_DIR}/conan.cmake)
 
-conan_cmake_configure(REQUIRES fmt/6.1.2
+conan_cmake_configure(REQUIRES gtest/1.12.1
                       GENERATORS cmake_find_package)
 
 conan_cmake_autodetect(settings)
@@ -26,7 +26,8 @@ conan_cmake_install(PATH_OR_REFERENCE .
                     REMOTE conancenter
                     SETTINGS ${settings})
 
-find_package(fmt)
+find_package(GTest)
 
 add_executable(app main.cpp)
-target_link_libraries(app fmt::fmt)
+
+target_link_libraries(app gtest)

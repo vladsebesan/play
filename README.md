@@ -1,6 +1,6 @@
 # play
 
-https://img.shields.io/github/license/vladsebesan/play
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/vladsebesan/play/CMake/main)
 
 # how to build
 > mkdir build

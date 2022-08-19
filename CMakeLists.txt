@@ -21,13 +21,11 @@ conan_cmake_configure(REQUIRES gtest/1.12.1
 
 conan_cmake_autodetect(settings)
 
-conan_cmake_install(PATH_OR_REFERENCE .
-                    BUILD missing
-                    REMOTE conancenter
-                    SETTINGS ${settings})
+conan_cmake_install(PATH_OR_REFERENCE . BUILD missing REMOTE conancenter SETTINGS ${settings})
 
-find_package(GTest)
+#find_package(GTest)
+#message( ${CONAN_LIBS} )
 
 add_executable(app main.cpp)
 
-target_link_libraries(app gtest)
+#target_link_libraries(app gtest)

@@ -2,6 +2,8 @@
 
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/vladsebesan/play/CMake/main)
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vladsebesan_play&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=vladsebesan_play)s
+
 # How to build locally
 
 1. mkdir build
